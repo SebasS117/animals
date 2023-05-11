@@ -45,6 +45,7 @@ body {
     overflow: hidden;
 }
 
+
 .puntos {
     display: flex;
     gap: 5px;
@@ -93,7 +94,6 @@ body {
     justify-content: center;
     align-items: center;
     margin-top: 125px;
-    overflow: hidden;
 }
 
 #imagen-uno {
@@ -103,7 +103,7 @@ body {
 #imagen-uno.activar {
     opacity: 0;
     transform: translateY(300px);
-    position: absolute;
+    position: fixed;
 }
 
 #imagen-dos {
