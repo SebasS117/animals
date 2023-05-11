@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url('./fonts/Montserrat-Bold.ttf');
+    font-style: normal;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url('./fonts/Montserrat-Medium.ttf');
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url('./fonts/Montserrat-Regular.ttf');
+    font-style: normal;
+    font-weight: 500;
+}
+
+body {
+    font-family: Montserrat;
+}
+
+.content {
+    width: 100%;
+}
+
+.container {
+    margin: 20px auto;
+    width: 440px;
+    height: 860px;
+    background-color: #77AFF9;
+    border-radius: 55px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.puntos {
+    display: flex;
+    gap: 5px;
+    margin-top: 50px;
+}
+
+.punto1 {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #4E93DE;
+
+}
+
+.punto2 {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #ffffff;
+}
+
+.title {
+    margin-top: 100px;
+}
+
+.title h1 {
+    font-size: 36px;
+    color: #2C4674;
+}
+
+.title h2 {
+    text-align: right;
+    color: #fff;
+}
+
+.info {
+    font-family: 18px;
+    margin-top: 80px;
+    text-align: center;
+    color: #2C4674;
+}
+
+.imagenes-flotantes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 125px;
+}
+
+#imagen-uno {
+    transition: all 500ms;
+}
+
+#imagen-uno.activar {
+    opacity: 0;
+    transform: translateY(300px);
+    position: absolute;
+}
+
+#imagen-dos {
+    opacity: 0;
+    transition: all 500ms;
+    transform: translateY(380px);
+}
+
+#imagen-dos.desactivar {
+    opacity: 100%;
+    transform: translateY(0);
+}
+
+
+.send {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    background-color:#2C4674;;
+    bottom: 130px;
+    border-radius: 50%;
+    transition: .5s;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.send:hover {
+    transform: rotate(90deg) scale(1.1);
+}
